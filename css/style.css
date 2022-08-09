@@ -1,0 +1,261 @@
+
+.center-text{
+  width: 100%;
+
+}
+.about-container{
+  width: 80%;
+  padding: 0px;
+  margin: 0 auto;
+}
+.box{
+  background-image: url(../img/portada.jpeg);
+  width: 100%;
+  padding: 0px;
+  margin top:10px;
+  margin-bottom:10px;
+
+}
+.box2{
+  width: 80%;
+  padding: 0px;
+  margin: 0 auto;
+}
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/c3.jpg);
+}
+img{
+  max-width: 100%
+}
+
+.img-col{
+  flex-basis: 20%
+    margin: 0 auto;
+   padding: 0px;
+
+
+
+}
+h3{
+  font-style: italic;
+text-align: right;
+}
+h2{
+  text-align: center;
+  font-style: italic;
+}
+h4{
+  text-align: center;
+  font-size: 65px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.container2{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
